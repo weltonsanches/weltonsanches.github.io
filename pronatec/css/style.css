@@ -33,14 +33,19 @@ header{
     float: right;
 }
 .navsuperior{
-    text-align: right;
+    float: right;
+    display: table-cell;
+    
 }
 .navsuperior>a{
-    width: 100px;
-    padding: 50px;
+    width: 5%;
+    padding: 60px 10px;
     color: #fff;
-    background-color: #222222;
     box-sizing: border-box;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration:none;
 }
 .navsuperior>a:hover{
     background-color: #45bb00;
