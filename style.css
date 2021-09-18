@@ -1,19 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
 
 body {
-  background-color: #212121;
-  color: #fff;
-  text-align: center;
   font-family: 'Quicksand', sans-serif;
+  background-color: #212121;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
 }
-
-h3 {
-  color: #b3b3b3;
+.title {
+  margin-top: 20vh;
+}
+.subtitle {
+  color: #1db954;
 }
 
 .fun-text {
   margin-top: 100px;
 }
 .fun-text > p {
-  font-size: 1.5em;
+  font-size: 1.6em;
+  color: #b3b3b3;
+}
+
+.content {
+  height: 50vh;
+}
+footer {
+  height: 20vh;
+}
+footer > p {
+  font-size: 1.2em;
+}
+
+/* Media Links CSS */
+.flex-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6em;
+}
+.icon-3d {
+  padding: 50px;
+  -webkit-animation: icon3d 200ms 2.5;
+  animation: icon3d 200ms 2.5;
+  color: #fff;
+}
+.icon-3d:hover {
+  -webkit-animation: icon3d 200ms infinite;
+  animation: icon3d 200ms infinite;
+}
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px #b3b3b3, -5px -6px #1db954;
+ }
+  25% {
+    text-shadow: -5px -6px #b3b3b3, 5px 4px #1db954;
+ }
+  50% {
+    text-shadow: 5px -4px #b3b3b3, -8px 4px #1db954;
+ }
+  75% {
+    text-shadow: -8px -4px #b3b3b3, -5px -4px #1db954;
+ }
+  100% {
+    text-shadow: -5px 0 #b3b3b3, 5px -4px #1db954;
+ }
 }
